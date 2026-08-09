@@ -1,407 +1,405 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="midnight-glass">
-    <meta name="bpaas-design-theme" content="kr-midnight-glass">
-    <meta name="description" content="화곡 룸싸롱 예약, 정보는 곧 힘이다. 화곡 룸싸롱의 모든 것을 파헤친다. 시스템, 가격, 서비스, 궁금하면 010-6279-0862로 바로 연락해라.">
-    <meta name="keywords" content="화곡 룸싸롱, 화곡 룸싸롱 예약, 화곡 룸싸롱 정보, 화곡 룸싸롱 시스템, 화곡 룸싸롱 가격표, 강서구 룸싸롱, 화곡 유흥 정보">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hwagok-room-info.namanavi.com/about.html">
-    <meta property="og:title" content="화곡 룸싸롱 예약 | 정보 – 시스템, 가격, 서비스의 모든 것">
-    <meta property="og:description" content="화곡 룸싸롱 예약, 정보는 곧 힘이다. 화곡 룸싸롱의 모든 것을 파헤친다. 시스템, 가격, 서비스, 궁금하면 010-6279-0862로 바로 연락해라.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hwagok-room-info.namanavi.com/about.html">
-    <meta property="og:image" content="https://t3b08-hg-room-rsv-1.vercel.app/og-image.jpg">
-    <meta name="twitter:card" content="summary">
-    <title>화곡 룸싸롱 예약 | 정보 – 시스템, 가격, 서비스의 모든 것</title>
-    <style>
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            scroll-behavior: smooth;
-            font-size: 16px;
-        }
-        body {
-            font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-            background: #0a0a12;
-            color: #e0e0e8;
-            line-height: 1.7;
-            font-weight: 300;
-            letter-spacing: 0.02em;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 700;
-            line-height: 1.2;
-            letter-spacing: -0.02em;
-        }
-        h1 {
-            font-size: clamp(2.2rem, 6vw, 3.8rem);
-            color: #ffffff;
-            text-shadow: 0 0 40px rgba(120, 180, 255, 0.15);
-        }
-        h2 {
-            font-size: clamp(1.6rem, 4vw, 2.6rem);
-            color: #f0f0f8;
-            border-left: 4px solid #78b4ff;
-            padding-left: 1rem;
-        }
-        h3 {
-            font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-            color: #c8d8f0;
-        }
-        p {
-            margin-bottom: 1.2rem;
-            font-size: clamp(0.95rem, 1.8vw, 1.1rem);
-            color: #c0c8d8;
-        }
-        .drop-cap::first-letter {
-            float: left;
-            font-size: 3.5em;
-            line-height: 0.8;
-            padding-right: 0.15em;
-            font-weight: 700;
-            color: #78b4ff;
-            text-shadow: 0 0 20px rgba(120, 180, 255, 0.3);
-        }
-        a {
-            color: #78b4ff;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border-bottom: 1px solid transparent;
-        }
-        a:hover {
-            color: #a8d4ff;
-            border-bottom-color: #78b4ff;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-            background: rgba(10, 10, 18, 0.92);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(120, 180, 255, 0.1);
-            padding: 0.8rem 0;
-        }
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        nav .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            color: #ffffff;
-            letter-spacing: 0.1em;
-        }
-        nav .logo span {
-            color: #78b4ff;
-        }
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-            align-items: center;
-        }
-        nav ul li a {
-            font-size: 0.9rem;
-            font-weight: 400;
-            color: #a0a8b8;
-            border: none;
-            padding: 0.3rem 0;
-            position: relative;
-        }
-        nav ul li a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #78b4ff;
-            transition: width 0.3s ease;
-        }
-        nav ul li a:hover::after {
-            width: 100%;
-        }
-        nav ul li a:hover {
-            color: #ffffff;
-            border: none;
-        }
-        nav ul li a.tel-link {
-            background: linear-gradient(135deg, #78b4ff, #4a8ad4);
-            color: #0a0a12;
-            padding: 0.5rem 1.2rem;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.85rem;
-        }
-        nav ul li a.tel-link:hover {
-            background: linear-gradient(135deg, #a8d4ff, #78b4ff);
-            color: #0a0a12;
-            transform: scale(1.05);
-        }
-        .hamburger-menu {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 5px;
-            padding: 5px;
-        }
-        .hamburger-menu span {
-            width: 28px;
-            height: 2px;
-            background: #e0e0e8;
-            transition: all 0.3s ease;
-        }
-        @media (max-width: 768px) {
-            nav ul {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: rgba(10, 10, 18, 0.98);
-                backdrop-filter: blur(20px);
-                padding: 1.5rem;
-                gap: 1.2rem;
-                border-bottom: 1px solid rgba(120, 180, 255, 0.1);
-            }
-            nav ul.active {
-                display: flex;
-            }
-            .hamburger-menu {
-                display: flex;
-            }
-            nav ul li a.tel-link {
-                display: inline-block;
-                text-align: center;
-                width: 100%;
-            }
-        }
-        header {
-            padding: 8rem 0 4rem;
-            background: linear-gradient(180deg, #0a0a12 0%, #111122 50%, #0a0a12 100%);
-            text-align: center;
-            border-bottom: 1px solid rgba(120, 180, 255, 0.08);
-        }
-        header .container {
-            position: relative;
-        }
-        header .container::before {
-            content: '';
-            position: absolute;
-            top: -3rem;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 1px;
-            height: 3rem;
-            background: linear-gradient(180deg, transparent, #78b4ff);
-        }
-        header p {
-            max-width: 700px;
-            margin: 1.5rem auto 0;
-            font-size: 1.1rem;
-            color: #8890a0;
-        }
-        section {
-            padding: 4rem 0;
-        }
-        section.alt-bg {
-            background: rgba(120, 180, 255, 0.02);
-            border-top: 1px solid rgba(120, 180, 255, 0.05);
-            border-bottom: 1px solid rgba(120, 180, 255, 0.05);
-        }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2.5rem;
-        }
-        .grid-3 {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 2rem;
-        }
-        @media (max-width: 768px) {
-            .grid-2, .grid-3 {
-                grid-template-columns: 1fr;
-            }
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(120, 180, 255, 0.08);
-            border-radius: 16px;
-            padding: 2rem;
-            transition: all 0.4s ease;
-        }
-        .card:hover {
-            background: rgba(255, 255, 255, 0.06);
-            border-color: rgba(120, 180, 255, 0.2);
-            transform: translateY(-4px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-        }
-        .card .icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            display: block;
-        }
-        .card h3 {
-            margin-bottom: 0.8rem;
-        }
-        .card p {
-            font-size: 0.95rem;
-            color: #a0a8b8;
-        }
-        .faq-item {
-            border-bottom: 1px solid rgba(120, 180, 255, 0.08);
-            padding: 1.5rem 0;
-        }
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-        .faq-item h4 {
-            font-size: 1.1rem;
-            color: #e0e0e8;
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .faq-item h4::after {
-            content: '+';
-            font-size: 1.4rem;
-            color: #78b4ff;
-            transition: transform 0.3s ease;
-        }
-        .faq-item h4.active::after {
-            content: '−';
-            transform: rotate(180deg);
-        }
-        .faq-item p {
-            font-size: 0.95rem;
-            color: #8890a0;
-            margin-top: 0.5rem;
-            display: none;
-        }
-        .faq-item p.show {
-            display: block;
-        }
-        .cta-section {
-            text-align: center;
-            padding: 5rem 0;
-            background: linear-gradient(135deg, rgba(120, 180, 255, 0.05), transparent);
-        }
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #78b4ff, #4a8ad4);
-            color: #0a0a12;
-            padding: 1rem 2.5rem;
-            font-size: 1.1rem;
-            font-weight: 700;
-            border-radius: 50px;
-            border: none;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            margin-top: 1.5rem;
-        }
-        .cta-button:hover {
-            background: linear-gradient(135deg, #a8d4ff, #78b4ff);
-            transform: scale(1.05);
-            box-shadow: 0 0 40px rgba(120, 180, 255, 0.3);
-            border: none;
-        }
-        .badge {
-            display: inline-block;
-            padding: 0.2rem 0.8rem;
-            font-size: 0.75rem;
-            font-weight: 600;
-            color: #78b4ff;
-            border: 1px solid rgba(120, 180, 255, 0.3);
-            border-radius: 50px;
-            letter-spacing: 0.1em;
-            margin-bottom: 1rem;
-        }
-        footer {
-            padding: 3rem 0;
-            border-top: 1px solid rgba(120, 180, 255, 0.08);
-            text-align: center;
-            font-size: 0.85rem;
-            color: #606878;
-        }
-        footer a {
-            color: #78b4ff;
-        }
-        .info-highlight {
-            background: rgba(120, 180, 255, 0.05);
-            border-left: 3px solid #78b4ff;
-            padding: 1.5rem 2rem;
-            border-radius: 0 12px 12px 0;
-            margin: 2rem 0;
-        }
-        .info-highlight p {
-            margin-bottom: 0;
-            font-style: italic;
-        }
-        .value-display {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #78b4ff;
-            line-height: 1;
-            margin-bottom: 0.5rem;
-        }
-        .value-label {
-            font-size: 0.85rem;
-            color: #8890a0;
-            letter-spacing: 0.05em;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="화곡 룸싸롱 예약, 정보는 곧 힘이다. 화곡 룸싸롱의 모든 것을 파헤친다.">
+ <meta name="keywords" content="화곡 룸싸롱, 화곡 룸싸롱 예약, 화곡 룸싸롱 정보, 화곡 룸싸롱 시스템, 화곡 룸싸롱 가격표, 강서구 룸싸롱, 화곡 유흥 정보">
+ <meta name="robots" content="index, follow">
+ <link rel="canonical" href="https://hwagok-room-info.namanavi.com/about.html">
+ <meta property="og:title" content="화곡 룸싸롱 예약 | 정보 – 시스템, 가격, 서비스의 모든 것">
+ <meta property="og:description" content="화곡 룸싸롱 예약, 정보는 곧 힘이다. 화곡 룸싸롱의 모든 것을 파헤친다.">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://hwagok-room-info.namanavi.com/about.html">
+ <meta property="og:image" content="https://t3b08-hg-room-rsv-1.vercel.app/og-image.jpg">
+ <meta name="twitter:card" content="summary">
+ <title>화곡 룸싸롱 예약 | 정보 – 시스템, 가격, 서비스의 모든 것</title>
+ <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ scroll-behavior: smooth;
+ font-size: 16px;
+ }
+ body {
+ font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
+ background: #0a0a12;
+ color: #e0e0e8;
+ line-height: 1.7;
+ font-weight: 300;
+ letter-spacing: 0.02em;
+ }
+ h1, h2, h3, h4, h5, h6 {
+ font-weight: 700;
+ line-height: 1.2;
+ letter-spacing: -0.02em;
+ }
+ h1 {
+ font-size: clamp(2.2rem, 6vw, 3.8rem);
+ color: #ffffff;
+ text-shadow: 0 0 40px rgba(120, 180, 255, 0.15);
+ }
+ h2 {
+ font-size: clamp(1.6rem, 4vw, 2.6rem);
+ color: #f0f0f8;
+ border-left: 4px solid #78b4ff;
+ padding-left: 1rem;
+ }
+ h3 {
+ font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+ color: #c8d8f0;
+ }
+ p {
+ margin-bottom: 1.2rem;
+ font-size: clamp(0.95rem, 1.8vw, 1.1rem);
+ color: #c0c8d8;
+ }
+ .drop-cap::first-letter {
+ float: left;
+ font-size: 3.5em;
+ line-height: 0.8;
+ padding-right: 0.15em;
+ font-weight: 700;
+ color: #78b4ff;
+ text-shadow: 0 0 20px rgba(120, 180, 255, 0.3);
+ }
+ a {
+ color: #78b4ff;
+ text-decoration: none;
+ transition: all 0.3s ease;
+ border-bottom: 1px solid transparent;
+ }
+ a:hover {
+ color: #a8d4ff;
+ border-bottom-color: #78b4ff;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 1.5rem;
+ }
+ nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 1000;
+ background: rgba(10, 10, 18, 0.92);
+ backdrop-filter: blur(20px);
+ border-bottom: 1px solid rgba(120, 180, 255, 0.1);
+ padding: 0.8rem 0;
+ }
+ nav .container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ nav .logo {
+ font-size: 1.4rem;
+ font-weight: 700;
+ color: #ffffff;
+ letter-spacing: 0.1em;
+ }
+ nav .logo span {
+ color: #78b4ff;
+ }
+ nav ul {
+ list-style: none;
+ display: flex;
+ gap: 2rem;
+ align-items: center;
+ }
+ nav ul li a {
+ font-size: 0.9rem;
+ font-weight: 400;
+ color: #a0a8b8;
+ border: none;
+ padding: 0.3rem 0;
+ position: relative;
+ }
+ nav ul li a::after {
+ content: '';
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ width: 0;
+ height: 2px;
+ background: #78b4ff;
+ transition: width 0.3s ease;
+ }
+ nav ul li a:hover::after {
+ width: 100%;
+ }
+ nav ul li a:hover {
+ color: #ffffff;
+ border: none;
+ }
+ nav ul li a.tel-link {
+ background: linear-gradient(135deg, #78b4ff, #4a8ad4);
+ color: #0a0a12;
+ padding: 0.5rem 1.2rem;
+ border-radius: 50px;
+ font-weight: 600;
+ font-size: 0.85rem;
+ }
+ nav ul li a.tel-link:hover {
+ background: linear-gradient(135deg, #a8d4ff, #78b4ff);
+ color: #0a0a12;
+ transform: scale(1.05);
+ }
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ padding: 5px;
+ }
+ .hamburger-menu span {
+ width: 28px;
+ height: 2px;
+ background: #e0e0e8;
+ transition: all 0.3s ease;
+ }
+ @media (max-width: 768px) {
+ nav ul {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ width: 100%;
+ background: rgba(10, 10, 18, 0.98);
+ backdrop-filter: blur(20px);
+ padding: 1.5rem;
+ gap: 1.2rem;
+ border-bottom: 1px solid rgba(120, 180, 255, 0.1);
+ }
+ nav ul.active {
+ display: flex;
+ }
+ .hamburger-menu {
+ display: flex;
+ }
+ nav ul li a.tel-link {
+ display: inline-block;
+ text-align: center;
+ width: 100%;
+ }
+ }
+ header {
+ padding: 8rem 0 4rem;
+ background: linear-gradient(180deg, #0a0a12 0%, #111122 50%, #0a0a12 100%);
+ text-align: center;
+ border-bottom: 1px solid rgba(120, 180, 255, 0.08);
+ }
+ header .container {
+ position: relative;
+ }
+ header .container::before {
+ content: '';
+ position: absolute;
+ top: -3rem;
+ left: 50%;
+ transform: translateX(-50%);
+ width: 1px;
+ height: 3rem;
+ background: linear-gradient(180deg, transparent, #78b4ff);
+ }
+ header p {
+ max-width: 700px;
+ margin: 1.5rem auto 0;
+ font-size: 1.1rem;
+ color: #8890a0;
+ }
+ section {
+ padding: 4rem 0;
+ }
+ section.alt-bg {
+ background: rgba(120, 180, 255, 0.02);
+ border-top: 1px solid rgba(120, 180, 255, 0.05);
+ border-bottom: 1px solid rgba(120, 180, 255, 0.05);
+ }
+ .grid-2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 2.5rem;
+ }
+ .grid-3 {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 2rem;
+ }
+ @media (max-width: 768px) {
+ .grid-2, .grid-3 {
+ grid-template-columns: 1fr;
+ }
+ }
+ .card {
+ background: rgba(255, 255, 255, 0.03);
+ border: 1px solid rgba(120, 180, 255, 0.08);
+ border-radius: 16px;
+ padding: 2rem;
+ transition: all 0.4s ease;
+ }
+ .card:hover {
+ background: rgba(255, 255, 255, 0.06);
+ border-color: rgba(120, 180, 255, 0.2);
+ transform: translateY(-4px);
+ box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+ }
+ .card .icon {
+ font-size: 2rem;
+ margin-bottom: 1rem;
+ display: block;
+ }
+ .card h3 {
+ margin-bottom: 0.8rem;
+ }
+ .card p {
+ font-size: 0.95rem;
+ color: #a0a8b8;
+ }
+ .faq-item {
+ border-bottom: 1px solid rgba(120, 180, 255, 0.08);
+ padding: 1.5rem 0;
+ }
+ .faq-item:last-child {
+ border-bottom: none;
+ }
+ .faq-item h4 {
+ font-size: 1.1rem;
+ color: #e0e0e8;
+ margin-bottom: 0.5rem;
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ .faq-item h4::after {
+ content: '+';
+ font-size: 1.4rem;
+ color: #78b4ff;
+ transition: transform 0.3s ease;
+ }
+ .faq-item h4.active::after {
+ content: '−';
+ transform: rotate(180deg);
+ }
+ .faq-item p {
+ font-size: 0.95rem;
+ color: #8890a0;
+ margin-top: 0.5rem;
+ display: none;
+ }
+ .faq-item p.show {
+ display: block;
+ }
+ .cta-section {
+ text-align: center;
+ padding: 5rem 0;
+ background: linear-gradient(135deg, rgba(120, 180, 255, 0.05), transparent);
+ }
+ .cta-button {
+ display: inline-block;
+ background: linear-gradient(135deg, #78b4ff, #4a8ad4);
+ color: #0a0a12;
+ padding: 1rem 2.5rem;
+ font-size: 1.1rem;
+ font-weight: 700;
+ border-radius: 50px;
+ border: none;
+ transition: all 0.3s ease;
+ text-decoration: none;
+ margin-top: 1.5rem;
+ }
+ .cta-button:hover {
+ background: linear-gradient(135deg, #a8d4ff, #78b4ff);
+ transform: scale(1.05);
+ box-shadow: 0 0 40px rgba(120, 180, 255, 0.3);
+ border: none;
+ }
+ .badge {
+ display: inline-block;
+ padding: 0.2rem 0.8rem;
+ font-size: 0.75rem;
+ font-weight: 600;
+ color: #78b4ff;
+ border: 1px solid rgba(120, 180, 255, 0.3);
+ border-radius: 50px;
+ letter-spacing: 0.1em;
+ margin-bottom: 1rem;
+ }
+ footer {
+ padding: 3rem 0;
+ border-top: 1px solid rgba(120, 180, 255, 0.08);
+ text-align: center;
+ font-size: 0.85rem;
+ color: #606878;
+ }
+ footer a {
+ color: #78b4ff;
+ }
+ .info-highlight {
+ background: rgba(120, 180, 255, 0.05);
+ border-left: 3px solid #78b4ff;
+ padding: 1.5rem 2rem;
+ border-radius: 0 12px 12px 0;
+ margin: 2rem 0;
+ }
+ .info-highlight p {
+ margin-bottom: 0;
+ font-style: italic;
+ }
+ .value-display {
+ font-size: 2.5rem;
+ font-weight: 700;
+ color: #78b4ff;
+ line-height: 1;
+ margin-bottom: 0.5rem;
+ }
+ .value-label {
+ font-size: 0.85rem;
+ color: #8890a0;
+ letter-spacing: 0.05em;
+ }
+ </style>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo"><span>✦</span> HGRS</div>
-            <ul>
-                <li><a href="/">홈</a></li>
-                <li><a href="/info">정보</a></li>
-                <li><a href="/gallery">갤러리</a></li>
-                <li><a href="/location">위치</a></li>
-                <li><a href="/review">후기</a></li>
-                <li><a href="tel:01062790862" class="tel-link">010-6279-0862</a></li>
-            </ul>
-            <div class="hamburger-menu" onclick="document.querySelector('nav ul').classList.toggle('active')">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+ <nav>
+ <div class="container">
+ <div class="logo"><span>✦</span> HGRS</div>
+ <ul>
+ <li><a href="/">홈</a></li>
+ <li><a href="/info">정보</a></li>
+ <li><a href="/gallery">갤러리</a></li>
+ <li><a href="/location">위치</a></li>
+ <li><a href="/review">후기</a></li>
+ 
+ </ul>
+ <div class="hamburger-menu" onclick="document.querySelector('nav ul').classList.toggle('active')">
+ 
+ 
+ 
+ </div>
+ </div>
+ </nav>
 
-    <header>
-        <div class="container">
-            <span class="badge">INFO · 화곡 룸싸롱</span>
-            <h1>정보는 <span style="color:#78b4ff;">무기</span>다</h1>
-            <p class="drop-cap">화곡 룸싸롱 예약, 모르고 가는 놈은 호구가 된다. 시스템, 가격, 서비스 — 여기 다 까발린다. 니가 원하는 건 단순한 술자리가 아니다. 진짜 정보를 원한다면 제대로 읽어라.</p>
-        </div>
-    </header>
+ <header>
+ <div class="container">
+ <span class="badge">INFO · 화곡 룸싸롱</span>
+ <h1>정보는 <span style="color:#78b4ff;">무기</span>다</h1>
+ <p class="drop-cap">화곡 룸싸롱 예약, 모르고 가는 놈은 호구가 된다. 시스템, 가격, 서비스 — 여기 다 까발린다. 니가 원하는 건 단순한 술자리가 아니다. 진짜 정보를 원한다면 제대로 읽어라.</p>
+ </div>
+ </header>
 
 <main>
 <div class='container'>
 <header>
 <a href='/' class='logo active'>화곡 룸싸롱 예약 정보</a>
-<button class='hamburger-menu' aria-label='메뉴 열기'><span></span><span></span></button>
+<button class='hamburger-menu' aria-label='메뉴 열기'></button>
 </header>
 <p><span class='drop-cap'>화</span>곡 지역에서 룸싸롱 예약을 고려하고 있다면, 예약 절차와 이용 방식을 미리 알아두는 것이 도움이 됩니다. 이 페이지는 예약 시스템, 비용이 결정되는 구조, 서비스 구성을 정리한 정보 안내이며 특정 업체를 평가하거나 순위를 매기지 않습니다. 처음 방문하는 경우 아래 절차를 참고하면 문의가 한결 수월해집니다.</p>
 <section class='alt-bg'>
@@ -450,7 +448,7 @@
 <section class='cta-section'>
 <h2>문의</h2>
 <p>예약 관련 문의는 아래 번호로 연락해주세요. 인원과 희망 시간을 함께 알려주시면 안내가 빨라집니다.</p>
-<a href='tel:01062790862' class='cta-button'>전화 문의 01062790862</a>
+
 </section>
 </div>
 </main>
